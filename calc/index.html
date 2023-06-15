@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Basic Calculator</h1>
+      </div>
+
+      <div class="cal">
+        <input type="number" id="one" value="" />
+        <input type="number" id="two" value="" />
+        <span id="operators"></span>
+        <div id="calc-actions">
+          <button type="button" id="btn-add" onclick="add()">+</button>
+          <button type="button" id="btn-subtract" onclick="sub()">-</button>
+          <button type="button" id="btn-multiply" onclick="mul()">*</button>
+          <button type="button" id="btn-divide" onclick="divi()">/</button>
+          <button type="button" id="btn-equal" onclick="equal()">=</button>
+        </div>
+      </div>
+
+      <div class="result">
+        <section id="results">
+          
+          <h2>Result: <span id="current-result">0</span></h2>
+        </section>
+      </div>
+    </div>
+    
+  </body>
+</html>
